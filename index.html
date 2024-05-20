@@ -1,119 +1,121 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="navi">
-            <div class="sect-1">
-                <h1>Wakili Dogara</h1>
-                <h3>wakildogara@mail.com</h3>
-                <h3>0987654321</h3>
-            </div>
-            <div class="sect-2">
-                <ul>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Recommendations</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="hero">
-            <div class="img-1">
-                <img src="images/ceo avatar.png" alt="">
-            </div>
-            <div class="txt-1">
-                <h1>Lorem ipsum dolor sit amet.</h1>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam sapiente quos nesciunt 
-                    reprehenderit voluptas minima error ab, iusto, cumque laborum accusamus architecto 
-                    corporis! Cum ipsam id nesciunt voluptatem natus voluptates.
-                </p>
-            </div>
-        </div>
-        <div class="skills">
-            <h1>Skills</h1>
-            <div class="skill">
-                <img src="images/html.png" alt="">
-                <h2>HTML</h2>
-                <p>Five years experience</p>
-            </div>
-            <div class="skill">
-                <img src="images/css.png" alt="">
-                <h2>CSS</h2>
-                <p>Five years experience</p>
-            </div>
-            <div class="skill">
-                <img src="images/js.png" alt="">
-                <h2>JS</h2>
-                <p>Five years experience</p>
-            </div>
-            <div class="skill">
-                <img src="images/git.png" alt="">
-                <h2>Git/Github</h2>
-                <p>Five years experience</p>
-            </div>
-            <div class="skill">
-                <img src="images/python.png" alt="">
-                <h2>Python</h2>
-                <p>Five years experience</p>
-            </div>
-            <div class="skill">
-                <img src="images/django.png" alt="">
-                <h2>Django</h2>
-                <p>Five years experience</p>
-            </div>
-        </div>
-        <div class="projs">
-            <h1>Projects</h1>
-            <div class="proj">
-                <h2>Lorem, ipsum.</h2>
-                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, eius. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, eius.</li>
-            </div>
-            <div class="proj">
-                <h2>Lorem, ipsum.</h2>
-                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, eius. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, eius.</li>
-            </div>
-            <div class="proj">
-                <h2>Lorem, ipsum.</h2>
-                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, eius. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, eius.</li>
-            </div>
-            <div class="proj">
-                <h2>Lorem, ipsum.</h2>
-                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, eius. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, eius.</li>
-            </div>
-        </div>
-        <div class="recs">
-            <h1>Recommendations</h1>
-            <div class="rec">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque eum delectus quia a, 
-                    facere quo ratione nesciunt at possimus pariatur quaerat enim consequatur molestias 
-                    maiores magni, ducimus nostrum et perferendis!
-                </p>
-            </div>
-            <div class="rec">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque eum delectus quia a, 
-                    facere quo ratione nesciunt at possimus pariatur quaerat enim consequatur molestias 
-                    maiores magni, ducimus nostrum et perferendis!
-                </p>
-            </div>
-            <div class="rec">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque eum delectus quia a, 
-                    facere quo ratione nesciunt at possimus pariatur quaerat enim consequatur molestias 
-                    maiores magni, ducimus nostrum et perferendis!
-                </p>
-            </div>
-            <div class="for-1">
-                <form action="">
-                    <h2>Live a recommendation</h2>
-                    <textarea name="" id="" cols="60" rows="1"></textarea><br>
-                    <textarea name="" id="" cols="60" rows="10"></textarea><br>
-                    <input type="submit">
-                </form>
-            </div>
-        </div>
-    </body>
+<html lang="en">
+  <head>
+      <title>Document</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="script.js"></script>
+  </head>
+  <body>
+      <section id="home">
+        <header>
+          Unit Conversions
+        </header>
+        <nav>
+          <div class="topdiv">
+            <a href="#temperature"><button  class="topmenu">Temperature</button></a>
+            <a href="#weight"><button  class="topmenu">Weight</button></a>
+            <a href="#distance"><button  class="topmenu">Distance</button></a>
+          </div>
+        </nav>
+      </section>    
+      <div style="clear:both;"></div>
+     
+      <div id="all-conversion-sections">
+
+        <section id="temperature"  class="b temperature">
+          <div id="tmp">
+            <figure>
+              <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/thermo.png" width="150px"/>
+              <figcaption>Celcius to Farenheit Conversion</figcaption>
+            </figure>
+            <article>
+
+              <fieldset>
+                <legend>Temperature</legend>
+                <label for="Temperature">Celsius</label> <br/>
+
+ <input type="number" id="celsius"> <br/>
+
+                <button id="temperature" onclick="temperature()"> Convert </button> <br/>
+
+                <input type="number" id="fahrenheit"> <br/>
+
+ <label for="Temperature">Fahrenheit</label>
+              </fieldset>
+              <aside>
+                To convert celsuis to fahrenheit yourself, use this formula replacing the `C` with your temperature in celsuis: (C × 9/5) + 32
+              </aside>
+            </article>
+          </div>
+        </section>
+
+        <div style="clear:both;"></div>
+      
+        <section id="weight"  class="b weight">          
+          <div id="wgt">
+            <figure>
+              <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/weight.png"  width="150px"/>
+              <figcaption>Kilograms to Pound Conversion</figcaption>
+            </figure>
+            <article>
+              <fieldset>
+                <legend>Weight</legend>
+                <label for="Weight">KG</label> <br/>
+
+ <input type="number" id="kilo"> <br/>
+
+                <button id="weight" onclick="weight()"> Convert </button>  <br/>
+
+ 
+                <input type="number" id="pounds">  <br/>
+
+  <label for="Weight">Pounds</label>    
+              </fieldset>
+              <aside>
+                To convert kilograms to pounds yourself, use this formula replacing the `kg` with your weight in kilograms: kg x 2.205
+              </aside>      
+            </article>
+          </div>
+        </section>
+
+        <div style="clear:both;"></div>
+
+        <section id="distance"  class="b distance">
+          <div id="dst">
+            <figure>
+              <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/speedo.png"  width="150px"/>
+              <figcaption>Kilometers to Miles Conversion</figcaption>
+            </figure>
+            <article>
+              <fieldset>
+                <legend>Distance</legend>
+                  <label for="Distance">KM</label> <br/>
+
+ <input type="number" id="km">  <br/>
+
+                  <button id="distance" onclick="distance()"> Convert </button> <br/>
+
+                  <input type="number" id="miles">  <br/>
+
+  <label for="Distance">Miles</label>
+              </fieldset>
+              <aside>
+                To convert kilometers to miles yourself, use this formula replacing the `km` with your distance in kilmeters: km &divide; 1.609
+              </aside>
+    
+            </article>
+          </div>
+        </section>
+        <div style="clear:both;"></div>
+
+      </div>
+
+    <div id="go-home" class="iconbutton">
+      <a href="#home">
+        <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/home.svg"/>
+      </a>
+    </div>
+
+    <footer>Learn more about HTML and CSS as a part of IBM Fullstack Cloud Developer Certification</footer>
+  </body>
 </html>
